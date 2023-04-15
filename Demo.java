@@ -1,3 +1,16 @@
+class Encapsulate
+{
+    private String geekName;
+    public String getName() 
+    {
+      return geekName;
+    }
+    public void setName(String newName)
+    {
+      geekName = newName;
+    }
+    
+}
 abstract class Abstraction
 {
     abstract void run();
@@ -89,7 +102,7 @@ public class Demo {
         
         System.out.println();
        //Access specifiers
-       System.out.println("Encapsulation , Inheritance :  ");
+       System.out.println("Inheritance , Access specifiers :  ");
        objB.CallingMethods();
        
        System.out.println();
@@ -103,6 +116,12 @@ public class Demo {
        System.out.println("Abstraction using abstract class : ");
        MyClass mc = new MyClass();
        mc.run();
+       System.out.println();
+       
+       System.out.println("Encapsulation : getter and setter methods ");
+       Encapsulate ep = new Encapsulate();
+       ep.setName("Ritesh");
+       System.out.println("Name of the student : "+ep.getName());
        
 
     }
